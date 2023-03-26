@@ -1,0 +1,112 @@
+.involved__head {
+  background-image: url("https://e3znb4e3i6k.exactdn.com/wp-content/uploads/2020/03/get-involved2.jpg?strip=all&lossy=1&ssl=1");
+  background-size: 100%;
+  background-position: top;
+  background: full;
+  height: 85vh;
+  position: relative;
+  
+}
+
+.involved__head:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.65;
+}
+
+.involved__headText {
+  width: 100%;
+  position: absolute;
+}
+
+.involved__headText > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85vh;
+  /* top: 0; */
+  /* left: 0; */
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  .involve__head {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
+
+  .involve__headText > h2 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .involve__headText > h2 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+  .involved__head {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .involved__headText > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    font-size: 3.2rem;
+    padding: 10px;
+    /* background-color: aqua; */
+  }
+
+  .involved__head {
+
+    background-image: url("https://e3znb4e3i6k.exactdn.com/wp-content/uploads/2020/03/get-involved2.jpg?strip=all&lossy=1&ssl=1");
+    background-size: cover;
+    background-position: top;
+    background: contain;
+    height: 40vh;
+    position: relative;
+    width: 100vw;
+  }
+
+}
+
+

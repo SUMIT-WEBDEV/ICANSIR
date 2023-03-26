@@ -1,0 +1,87 @@
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import "./Login.css";
+
+function Login() {
+  const history = useHistory();
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  let name, value;
+
+  const handleInputs = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+
+    setUser({ ...user, [name]: value });
+  };
+
+  const loginUser = async (e) => {
+    e.preventDefault();
+
+    const { email, password } = user;
+
+    const res = await fetch("/logins", {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    });
+
+    const data = res.json();
+
+    if (res.status === 400 || !data) {
+      window.alert("Invalid ");
+      console.log("invalid ");
+    } else {
+      window.alert(" Successful");
+      console.log("SuccessFul ");
+      history.push("/addArticle");
+    }
+  };
+
+  return (
+    <div className="login">
+      <img src="../png.png" alt="" />
+
+      <h1>ADMIN PANEL</h1>
+      <h5>Control panel login</h5>
+
+      <form method="POST">
+        <h5>Email</h5>
+        <input
+          type="email"
+          name="email"
+          value={user.email}
+          onChange={handleInputs}
+        />
+
+        <h5>Password</h5>
+        <input
+          type="password"
+          name="password"
+          value={user.password}
+          onChange={handleInputs}
+        />
+
+        <button
+          type="submit"
+          value="register"
+          className="login__signInButton"
+          onClick={loginUser}
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  );
+}
+
+export default Login;

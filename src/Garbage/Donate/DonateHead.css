@@ -1,0 +1,24 @@
+.donateHead {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4tDVQphJt5Rt8ZZheTrIvjEpP1p_XcPmDw&usqp=CAU");
+  /* background-image: url("https://youwecan.org/wp-content/uploads/2019/08/Banner-Background.png"); */
+  background-size: 100%;
+  background-position: top;
+  background: full;
+  height: 55vh;
+  position: relative;
+}
+
+.donateHead__Text {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 55vh;
+}
+
+.donateHead__Text > h1 {
+  font-size: 48px;
+  color: #fff;
+}

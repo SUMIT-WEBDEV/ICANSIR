@@ -1,0 +1,8 @@
+.manage {
+  display: flex;
+  overflow: hidden;
+  margin: 10px 50px 50px 50px;
+  z-index: 50;
+  flex-direction: column;
+  flex: 70%;
+}

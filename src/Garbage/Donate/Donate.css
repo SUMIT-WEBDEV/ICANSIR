@@ -1,0 +1,85 @@
+.donate {
+  /* padding: 150px; */
+  /* padding-top: 150px; */
+  /* background-color: lightblue; */
+  text-align: center;
+  padding: 150px 50px 50px 50px;
+
+  background-image: url("https://image.freepik.com/free-photo/closeup-open-hand-ask-money_39919-92.jpg");
+  /* background-image: url("https://image.freepik.com/free-photo/hands-reaching-out-help_42667-1660.jpg"); */
+  background-size: 100%;
+  background-position: top;
+  background: full;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate__wrapper {
+  width: 70%;
+  background-color: #ffffff;
+  /* border: 2px solid black; */
+  padding: 50px 0px 50px 0px;
+  border-radius: 10px;
+  /* box-shadow: 5px 10px #888888; */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.donate__wrapper > input {
+  outline: none;
+  /* height: 50px; */
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  border: none;
+  font-size: 18px;
+  /* background-color: transparent; */
+  background-color: transparent;
+  border-bottom: 2px solid #242424;
+}
+
+.donate__wrapper > h1 {
+  color: #242424;
+  font-size: 2rem;
+}
+
+.donate__wrapper > h3 {
+  color: #242424;
+  font-size: 2rem;
+  padding: 10px 0px 36px 0px;
+}
+
+.stripe {
+  margin: 40px;
+}
+
+.abcd {
+  /* background-color: chartreuse; */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  outline: none;
+  font-weight: 1000;
+  border: none;
+  color: #242424;
+  background-color: grey;
+  white-space: nowrap;
+  border-radius: 6px;
+}
+
+.efgh {
+  /* background-color: crimson; */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  outline: none;
+  font-weight: 300;
+  border: none;
+  color: #fff;
+  background-color: green;
+  white-space: nowrap;
+  border-radius: 6px;
+}

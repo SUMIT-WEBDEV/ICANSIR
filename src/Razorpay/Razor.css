@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .razor {
+    /* background-image: url("./uns.jpg"); */
+    background-image: url("./donatepage.jpg");
+    background-size: 100vw;
+    width: 100vw;
+    background-position: top left;
+    background: full;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  
+  .razor:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.65;
+ }
+
+ .razor{
+    font-size: 3rem;
+    background-color: #eba1eb;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .razor__Wrapper {
+    /* width: 70%; */
+    width: 400px;
+
+    height: 50%;
+
+ }
+
+ .razor__Left{
+   position: absolute;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    width: 23%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    /* height: 70vh; */
+    background-color:rgba(11, 15, 19, 0.851)
+ }
+
+ .razor__Left > h1 {
+    color: #fff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 3rem;
+ }
+
+ .razor__Price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+ }
+
+ .razor__PriceChild > li{
+    border: 0.5px solid grey;
+    font-weight: 500;
+    padding: 10px;
+    width: 140px;
+    background-color: #fff;
+    color: #494848;
+    font-size: 2.1rem;
+    list-style-type: none;
+    margin-right: 40px;
+    border-radius: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .razor__PriceChild > li:hover {
+    background-color: #0099ff;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+ }
+
+ .razor__PriceChild {
+    display: flex;
+    margin-top: 15px;
+ }
+
+ .razor__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    margin-top: 15px;
+ }
+
+ .razor__button > button {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-right: 16px;
+    padding: 8px;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+ }
+
+ .razor__Left > input {
+    /* width: 20px; */
+    /* height: 20px; */
+    font-size: 1.8rem;
+    padding: 10px 10px 7px 7px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 7px;
+
+ }
+
+ /* .razor__Left > input::placeholder{
+   color: green
+ } */
+
+
+ li.active {
+   background-color: #0099ff;
+   color: #fff
+ }
+
+ .input-container {
+   opacity: 0;
+   /* display: none; */
+ }
+ 
+ .input-container.show {
+   opacity: 1;
+   transition: opacity 0.5s ease-in;
+
+ }
+ .input-container.show  > input{  
+   font-size: 1.8rem;
+   padding: 10px 10px 7px 7px;
+   width: 334px;
+   outline: none;
+   border: none;
+   border-radius: 2px;
+   margin-bottom: 10px;
+   /* margin-bottom: 7px; */
+
+ }

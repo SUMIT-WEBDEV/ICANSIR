@@ -1,0 +1,346 @@
+.razorr {
+    background-image: url("./donatepage.jpg");
+    background-size: 100vw;
+    width: 100vw;
+    background-position: top left;
+    background: full;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.razorr:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.65;
+ }
+
+
+.razorr__Wrapper{
+    width: 60%;
+    /* background-color: aqua; */
+    height: 100vh;
+} 
+
+.razorr__One {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    height: 90vh;
+}
+
+
+.razorr__Left {
+    background-color: #242424;
+    padding: 20px;
+    position: absolute;
+}
+
+.razorr__Left > h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.razorr__Left > input {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 12px 15px 12px 15px;
+    padding: 5px;
+    font-size: 2rem;
+    outline: none;
+}
+
+.razorr__PriceChild {
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.razorr__PriceChild > li {
+    padding: 5px;
+    margin-right: 25px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #fff;
+    width: 40%;
+    font-size: 2rem
+}
+
+li.active {
+    background-color: #0099ff;
+    color: #fff
+}
+
+
+.razorr__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.razorr__button > button {
+    margin-top: 14px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    padding: 7px
+}
+
+
+@media screen and (max-width: 960px) {
+    .razorr__Wrapper{
+        width: 100%;
+        /* background-color: aqua; */
+        background-color: rgb(235, 228, 228);
+        height: 100vh;
+    } 
+
+    .razorr__Left {
+        padding: 15px;
+    }
+
+    .razorr__One{
+        height: 100vh;
+    }
+
+    .razorr{
+        height: 90vh;
+    }
+
+    /* .razorr__button > button {
+        margin-top: 4px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        background-color: #0099ff;
+        color: #fff;
+        border: none;
+        padding: 7px
+    }
+
+    
+    .razorr__button {
+        display: flex;
+        justify-content: flex-end;
+    }
+     */
+}
+
+@media screen and (max-width: 768px) {
+
+    .razorr__Wrapper{
+        width: 100%;
+        /* background-color: aqua; */
+        height: 100vh;
+    } 
+
+    .razorr__Left {
+        padding: 15px;
+    }
+    
+    .razorr__button > button {
+        margin-top: 4px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        background-color: #0099ff;
+        color: #fff;
+        border: none;
+        padding: 4px;
+        width: 65vw;
+    }
+
+    
+    .razorr__button {
+        display: flex;
+        justify-content: center;
+        /* background-color: aqua; */
+
+        /* justify-content: flex-end; */
+    }
+    
+
+    .razorr__PriceChild > li {
+        padding: 5px;
+        margin-right: 15px;
+        margin-top: 10px;
+        text-align: center;
+        background-color: #fff;
+        width: 50%;
+        font-size: 2rem
+    }
+    
+    li.active {
+        background-color: #0099ff;
+        color: #fff
+    }
+
+    
+    .razorr__One{
+        height: 80vh;
+    }
+
+    .razorr{
+        height: 70vh;
+    }
+
+    
+
+}
+
+
+/* 
+.razorr {
+    background-image: url("./donatepage.jpg");
+    background-size: 100vw;
+    width: 100vw;
+    background-position: top left;
+    background: full;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.razorr__Wrapper {
+
+    
+    position: absolute;
+    width: 400px;
+    font-size: 3rem;
+    background-color: #eba1eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.razor__One > h1{
+    font-size: 3.5rem;
+    color: #fff
+}
+
+.razorr__PriceChild {
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.razorr__PriceChild > li {
+    padding: 10px;
+    margin-right: 25px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+    font-size: 2rem
+}
+
+.razorr__Price{
+    margin-bottom: 10px;
+}
+
+li.active {
+    background-color: #0099ff;
+    color: #fff
+}
+
+.razor__One > input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 12px 15px 12px 15px;
+    padding: 7px;
+    font-size: 2rem;
+    outline: none;
+}
+
+.razorr__button > button {
+    font-size: 1.7rem;
+    margin-left:15px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    padding: 7px
+}
+
+.razorr__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+
+.razor__One > h1{
+    font-size: 3.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.razorr__PriceChild > li {
+    padding: 10px;
+    margin-right: 25px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #fff;
+    width: 50%;
+    font-size: 2rem
+}
+
+li.active {
+    background-color: #0099ff
+}
+
+.razorr__Wrapper {
+    width: 400px;
+    padding: 20px 10px 20px 10px;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.razor__One > input {
+    display: flex;
+    flex-direction: column;
+    width: 83.5%;
+    margin: 12px 15px 12px 15px;
+    padding: 7px;
+    font-size: 2rem;
+    outline: none;
+}
+
+.razorr__button > button {
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    padding: 7px;
+    width: 89%;
+}
+.razorr__button {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.razorr {
+    height: 80vh;
+}
+
+} */

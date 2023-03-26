@@ -1,0 +1,131 @@
+.about {
+  /* margin: 50px 0px 100px 0px; */
+  margin: 5rem 0rem 10rem 0rem;
+}
+
+.about__Wrapper > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  color: #242424;
+}
+
+.about__WrapperFirst {
+  display: flex;
+}
+
+.first__Left {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  align-items: flex-end;
+  margin: 3rem;
+}
+
+.first__Left > img {
+  max-width: 500px;
+  height: auto;
+}
+
+.first__Right {
+  /* background-color: blanchedalmond; */
+  /* width: 65%; */
+  margin: 0rem 5rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.first__Right > h1 {
+  padding-bottom: 0.5rem;
+  width: 85%;
+  font-size: 2.6rem;
+  color: #242424;
+}
+
+.first__Right > p {
+  width: 85%;
+  font-size: 1.7rem;
+  color: rgba(9, 23, 42, 0.62);
+  font-weight: 600;
+}
+
+.about__WrapperSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0rem 0rem 0rem;
+}
+
+.about__WrapperSecond > h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  color: #242424;
+
+}
+
+.about__WrapperSecond > p {
+  color: rgba(9, 23, 42, 0.62);
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 85%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 960px) {
+  * {
+    font-size: 50%;
+  }
+
+  .about__WrapperFirst {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first__Left {
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .first__Right {
+    align-items: center;
+    /* margin: 0px 20px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  justify-content: center; */
+  }
+
+  .first__Right > h1 {
+    width: 95%;
+    text-align: center;
+  }
+
+  .first__Right > p {
+    width: 93%;
+    text-align: center;
+  }
+
+  .first__Left > img {
+    max-width: 430px;
+  }
+
+  .about__WrapperSecond > p {
+    width: 93%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 45%;
+  }
+
+  .first__Left > img {
+    max-width: 300px;
+    
+  }
+}

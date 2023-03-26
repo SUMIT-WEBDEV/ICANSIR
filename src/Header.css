@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("https://e3znb4e3i6k.exactdn.com/wp-content/uploads/2019/08/Banner-Background.png?strip=all&lossy=1&ssl=1");
+  background-size: 100%;
+  background-position: top;
+  background: full;
+  height: 90vh;
+  position: relative;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.65;
+}
+
+
+.header__Wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+.header__Wrapper > h2 {
+  font-size: 4.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85vh;
+  /* top: 0; */
+  /* left: 0; */
+}
+
+
+@media screen and (max-width: 1300px) {
+  .header__Wrapper > h2 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+
+  .header {
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 75vh;
+  }
+
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .header__Wrapper > h2 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+
+  .header {
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 70vh;
+  }
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .header__Wrapper > h2 {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+
+  .header {
+     background-size: cover;
+     height: 40vh;
+  }
+
+}
+
