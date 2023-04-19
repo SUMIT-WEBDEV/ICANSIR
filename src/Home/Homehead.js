@@ -4,8 +4,8 @@ import Navbar from "../Navigation/Navbar";
 import Typical from "react-typical";
 import Footer from "../Footer";
 // import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
-import "react-simple-typewriter/dist/index";
+// import { Cursor, useTypewriter } from "react-simple-typewriter";
+// import "react-simple-typewriter/dist/index";
 
 function Homehead() {
   // const { text } = useTypewriter({
@@ -16,16 +16,16 @@ function Homehead() {
   //   delaySpeed: 1000,
   // });
 
-  const [text] = useTypewriter({
-    // words: ["I Can Sir", "You Can Sir", "We Can Sir"],
-    words: ["I Can Sir", "You Can Sir", "We Can Sir"],
-    loop: 0,
-    // delaySpeed: 2000,
-    // loop: 5,
-    // typeSpeed: 70,
-    // deleteSpeed: 50,
-    // delaySpeed: 1000,
-  });
+  // const [text] = useTypewriter({
+  //   // words: ["I Can Sir", "You Can Sir", "We Can Sir"],
+  //   words: ["I Can Sir", "You Can Sir", "We Can Sir"],
+  //   loop: 0,
+  //   // delaySpeed: 2000,
+  //   // loop: 5,
+  //   // typeSpeed: 70,
+  //   // deleteSpeed: 50,
+  //   // delaySpeed: 1000,
+  // });
 
   return (
     <div>
@@ -55,8 +55,8 @@ function Homehead() {
           <div className="homehead__headText">
             <h2>WE ENVISION AN INDIA EMPOWERED TO</h2>
             <h1>
-              {text}
-              <Cursor />
+              {/* {text} */}
+              {/* <Cursor /> */}I CAN SIR
             </h1>
 
             <p>
