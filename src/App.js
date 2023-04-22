@@ -45,7 +45,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/articles")
+      .get("https://icansir.vercel.app/articles")
       .then((res) => {
         // setLoading(false)
         setPosts(res.data);

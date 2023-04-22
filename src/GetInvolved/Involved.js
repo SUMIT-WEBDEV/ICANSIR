@@ -24,7 +24,7 @@ function Involved() {
 
     const { name, email, message } = user;
 
-    const res = await fetch("/auth", {
+    const res = await fetch("https://icansir.vercel.app/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

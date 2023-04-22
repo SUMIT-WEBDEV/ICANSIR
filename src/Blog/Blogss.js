@@ -11,7 +11,7 @@ const Blogss = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/articles/${props.match.params.id}`)
+      .get(`https://icansir.vercel.app/${props.match.params.id}`)
       .then((res) => [
         setTitle(res.data.title),
         setArticle(res.data.article),
@@ -41,7 +41,7 @@ const Blogss = (props) => {
 
           {/* <p>{article}</p> */}
         </div>
-        <a className="Back" href="http://localhost:8080/blogs">
+        <a className="Back" href="https://icansir.vercel.app/blogs">
           Back
         </a>
       </div>

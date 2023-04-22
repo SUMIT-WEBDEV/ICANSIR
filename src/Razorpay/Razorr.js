@@ -18,7 +18,8 @@ function Razorr() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const url = "http://localhost:8080";
+  // const url = "http://localhost:8080";
+  const url = "https://icansir.vercel.app";
 
   async function fetchOrders() {
     const { data } = await axios.get(`${url}/donate/paymentResponse`);
