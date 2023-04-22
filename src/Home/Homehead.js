@@ -1,7 +1,7 @@
 import React from "react";
 import "./Homehead.css";
 import Navbar from "../Navigation/Navbar";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import Footer from "../Footer";
 // import { useTypewriter, Cursor } from "react-simple-typewriter";
 // import { Cursor, useTypewriter } from "react-simple-typewriter";
